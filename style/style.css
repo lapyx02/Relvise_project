@@ -53,14 +53,15 @@ header{
     display: flex;
     padding: 36px 0;
     align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
 }
 .header-top__logo {
     font-weight: bold;
     font-size: 24px;
     line-height: 133%;
     letter-spacing: 0.1px;
-    color: #252B42;  
-    margin-right: 132px;
+    color: #252B42;
 }
 .header-menu {
     display: flex;
@@ -189,9 +190,9 @@ header{
     padding: 80px 0;
 }
 .achievements {
-    padding-top: 50px;
+    margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .achievements-item {
     max-width: 230px;
@@ -202,6 +203,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-top: 20px;
 }
 .achievements-item__img {
     height: 48px;
@@ -653,9 +655,6 @@ input.subscribe-input::placeholder{
     }
 }
 @media(max-width:800px){
-    .header-top {
-        justify-content: center;
-    }
     .header_center{
         display: flex;
         flex-direction: column;
@@ -750,27 +749,61 @@ input.subscribe-input::placeholder{
         width: 220px;
     }
 }
-@media(max-width:601px){
-    .finance-box{
+
+@media (max-width: 601px) {
+    .finance-box {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
-    .finance-item{
+
+    .finance-item {
         max-width: 100%;
-        width: 230px;
-        margin-bottom: 10px;
+        width: 70%;
+        margin: 1rem 0;
     }
-    .achievements-item{
-        width: 200px;
+
+    .achievements-item {
+        width: 70%;
+        margin: 1rem 0;
     }
-    .subscribe{
+
+    .subscribe {
         width: 670px;
     }
-    input.subscribe-input{
+
+    input.subscribe-input {
         width: 200px;
     }
-    .center-item:nth-child(4){
+
+    .center-item:nth-child(4) {
         padding-top: 20px;
+    }
+
+    .practice-box__item {
+        margin: 1rem 0;
+        width: 70%;
+    }
+
+    .practice-box__item img {
+        width: 100%;
+    }
+
+    .box-info__title {
+        margin-top: 1rem;
+    }
+
+    .get-item > div {
+        text-align: center;
+    }
+
+    .center-box {
+        justify-content: unset;
+    }
+
+    .center-box .center-item {
+        width: 40%;
+        padding: 0;
+        margin: 1rem 5%;
     }
 }
 @media(max-width:568px){
@@ -781,9 +814,6 @@ input.subscribe-input::placeholder{
     .logo{
         flex-wrap: wrap;
         justify-content: space-evenly;
-    }
-    .achievements-item:last-child{
-        margin-top: 0 ;
     }
     .subscribe{
         flex-wrap: wrap;
@@ -798,5 +828,14 @@ input.subscribe-input::placeholder{
     }
 }
 @media(max-width:568px){
-    
+    .cente-title {
+        font-size: 48px;
+    }
+}
+@media(max-width:400px){
+
+    .header-top {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
